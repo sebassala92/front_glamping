@@ -1,0 +1,30 @@
+@import "./../styles/variables.scss";
+
+.cont_1 {
+  width: 90vw;
+  height: 200vw;
+  max-width: 400px;
+  max-height: 500px;
+  background-color: blue;
+  margin: 20px 0;
+
+  .title_1 {
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .cont_2 {
+    background-color: white;
+    width: 27vw;
+    height: 25vw;
+    max-width: 350px;
+    max-height: 330px;
+    margin: auto;
+  }
+
+  @include breakpoint(md) {
+    width: 30%;
+    height: 80%;
+  }
+}

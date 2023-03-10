@@ -1,0 +1,20 @@
+@import "./../styles/variables.scss";
+
+.Card_Wrapper {
+  .cont_1 {
+    height: 1500px;
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(md) {
+      height: 550px;
+
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}

@@ -1,21 +1,17 @@
-import React from "react";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import Home from "./pages/home/Home";
-import "./scss/main.scss";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-const App = () => {
+import CardWrapper from "./components/CardWrapper";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import MainSwiper from "./components/MainSwiper";
+
+function App() {
   return (
-    <div>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <>
+      <Header />
+      <MainSwiper />
+      <CardWrapper />
+      <Footer />
+    </>
   );
-};
+}
 
 export default App;
