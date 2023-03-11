@@ -6,7 +6,7 @@ import DomoCard from './DomoCard'
 
 const CardWrapper = () => {
   return (
-    <div className={classes.Card_Wrapper}>
+    <div className={classes.card_Wrapper}>
 
       <div className={classes.cont_1}>
         <DomoCard />
