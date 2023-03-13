@@ -1,9 +1,12 @@
 import React, {useState} from 'react'
 
+
 import {BiMenuAltRight} from 'react-icons/bi'
 import {AiOutlineClose} from 'react-icons/ai'
+
+import {Link} from 'react-router-dom';
  
-import classes from './Header.module.scss'
+import classes from '../scss/Header.module.scss'
 
 const Header = () => {
 
@@ -17,42 +20,41 @@ const Header = () => {
 
         <div className={classes.header__content}>
             
-            {/* <h2 className={classes.header__content__logo}></h2>
+            <h2 className={classes.header__content__logo}></h2>
 
-            <nav cclassName={`${classes.header__content__nav} ${menuOpen ? classes.isMenu : ""}`}>
+            <nav className={classes.header__content__nav}>
 
-                <ul>
+                {/* <ul>
                     <li>
-                        <a href='/'>Inicio</a>
+                        <Link to="/">Inicio</Link>
                     </li>
 
                     <li>
-                        <a href='/'>Glamping </a>
+                        <Link href='/'>Glamping</Link>
                     </li>
 
                     <li>
-                        <a href='/'>
-                            Reserva</a>
+                        <Link href='/reserva'>Reserva</Link>
                     </li>
 
                     <li>
-                        <a href='/'>Contacto</a>
+                        <Link href='/contacto'>Contacto</Link>
                     </li>
 
                     <li>
-                        <a href='/'>Galeria</a>
+                        <Link href='/escapada'>Galeria</Link>
                     </li>
-                </ul>
+                </ul> */}
 
-                <div className={classes.header__content__toggle}>
+                {/* <div className={classes.header__content__toggle}>
                         {!menuOpen ? (
                             <BiMenuAltRight onClick={menuToggleHandler} />
                         ) : (
                             <AiOutlineClose onClick={menuToggleHandler} />
                         )}
-                    </div>
+                </div> */}
 
-            </nav> */}
+            </nav>
 
         </div>
 

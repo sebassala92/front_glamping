@@ -1,0 +1,86 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  width: 100%;
+  height: 400px;
+
+  background: url("../../img/general/sky-1.png") no-repeat;
+  background-size: cover;
+
+  .cont_1 {
+    width: 100%;
+    height: 400px;
+
+    background: url("../../img/general/sky-2.png") no-repeat;
+    background-size: cover;
+    background-position-y: -200%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cont_2 {
+    width: 90%;
+    max-width: 450px;
+    height: 350px;
+
+    .logo {
+      width: 250px;
+      height: 180px;
+      margin: auto;
+
+      background: url("../../icon/logo-entrenubes.png") no-repeat;
+      background-size: 100%;
+      background-position: center;
+    }
+
+    .redes {
+      width: 130px;
+      height: 30px;
+      margin: 10px auto 20px;
+
+      display: flex;
+      flex-direction: row;
+
+      &__tw {
+        width: 35px;
+        height: 35px;
+        background: url("../../icon/tw.png") no-repeat;
+        background-size: 66%;
+        background-position: center;
+      }
+
+      &__yt {
+        width: 35px;
+        height: 35px;
+        background: url("../../icon/yt.png") no-repeat;
+        background-size: 75%;
+        background-position: center;
+      }
+
+      &__ig {
+        width: 35px;
+        height: 35px;
+        background: url("../../icon/ig.png") no-repeat;
+        background-size: 60%;
+        background-position: center;
+      }
+
+      &__fb {
+        width: 35px;
+        height: 35px;
+        background: url("../../icon/fb.png") no-repeat;
+        background-size: 33%;
+        background-position: center;
+      }
+    }
+
+    .derechos {
+      text-align: center;
+      color: black;
+      font-weight: 300;
+      font-size: 14px;
+    }
+  }
+}

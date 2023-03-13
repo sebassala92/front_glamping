@@ -1,6 +1,6 @@
 import React from 'react'
 
-import classes from './TextWrapper.module.scss'
+import classes from '../scss/TextWrapper2.module.scss'
 
 const TextWrapper = () => {
   return (

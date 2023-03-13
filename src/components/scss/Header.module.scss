@@ -1,0 +1,37 @@
+@import "../../styles/variables.scss";
+
+.header {
+  width: 100%;
+  background-color: lightblue;
+
+  &__content {
+    max-width: 1600px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+      height: 120px;
+      width: 120px;
+
+      background: url("../../icon/logo-entrenubes.png") no-repeat;
+      background-size: 90%;
+      background-position: center;
+    }
+
+    &__nav {
+      width: 500px;
+      display: flex;
+      flex-direction: row;
+
+      ul {
+        width: 500px;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}

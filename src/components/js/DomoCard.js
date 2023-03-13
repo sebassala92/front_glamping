@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import classes from './DomoCard.module.scss'
+import classes from '../scss/DomoCard.module.scss'
 
 
 const DomoCard = () => {

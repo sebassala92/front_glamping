@@ -1,4 +1,4 @@
-@import "./../styles/variables.scss";
+@import "../../styles/variables.scss";
 
 .text_wrapper {
   .cont_1 {
@@ -34,7 +34,7 @@
       margin: 40px 0 10px;
       height: 40px;
       width: 100px;
-      background: url("../icon/icono-varios.png") no-repeat;
+      background: url("../../icon/icono-varios.png") no-repeat;
       background-size: 90%;
       background-position: center;
     }
@@ -43,7 +43,7 @@
       margin: 20px;
       height: 200px;
       width: 200px;
-      background: url("../icon/icono-carpa.png") no-repeat;
+      background: url("../../icon/icono-carpa.png") no-repeat;
       background-size: 90%;
       background-position: center;
     }
@@ -63,7 +63,7 @@
       margin: 20px;
       height: 100px;
       width: 100px;
-      background: url("../icon/calendar.png") no-repeat;
+      background: url("../../icon/calendar.png") no-repeat;
       background-size: 90%;
       background-position: center;
     }

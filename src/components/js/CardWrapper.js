@@ -1,6 +1,6 @@
 import React from 'react'
 
-import classes from './CardWrapper.module.scss'
+import classes from '../scss/CardWrapper.module.scss'
 import DomoCard from './DomoCard'
 
 
