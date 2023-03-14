@@ -8,12 +8,13 @@ import Footer from "./components/js/Footer";
 import Header from "./components/js/Header";
 
 import Home from "./Landing/js/Home";
-import Landing2 from "./Landing/js/Landing2";
+import Landing2 from "./Landing/js/LandingDomo1";
 import Reserva from "./Landing/js/Reserva";
 import Contacto from "./Landing/js/Contacto";
 import Escapada from "./Landing/js/Escapada";
 
 function App() {
+
   return (
     <>
       <Header />
