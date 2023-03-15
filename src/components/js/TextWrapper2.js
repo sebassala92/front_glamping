@@ -1,10 +1,10 @@
 import React from 'react'
 
-import classes from '../scss/TextWrapper2.module.scss'
+import classes from '../scss/TextWrapper.module.scss'
 
 const TextWrapper = () => {
   return (
-    <div className={classes.text_wrapper}>
+    <article className={classes.text_wrapper}>
         <div className={classes.cont_1}>
 
             <div className={classes.logo_1}></div>
@@ -28,7 +28,7 @@ const TextWrapper = () => {
 
 
         </div>      
-    </div>
+    </article>
   )
 }
 

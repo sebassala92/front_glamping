@@ -2,9 +2,8 @@
 
 .text_wrapper {
   .cont_1 {
-    height: 1500px;
     max-width: 1400px;
-    margin: auto;
+    margin: 20px auto 30px;
 
     display: flex;
     align-items: center;
@@ -46,10 +45,6 @@
       background: url("../../icon/icono-carpa.png") no-repeat;
       background-size: 90%;
       background-position: center;
-    }
-
-    @include breakpoint(md) {
-      height: 550px;
     }
   }
 
