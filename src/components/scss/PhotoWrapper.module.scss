@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.photo_wrapper {
+  width: 100%;
+
+  .cont_1 {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: blue;
+  }
+}
