@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.mapa {
+  width: 100%;
+
+  .titulo {
+    font-size: 45px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .cont_mapa {
+    width: 90vw;
+    max-width: 1000px;
+    height: 70vw;
+    max-height: 800px;
+    background-color: green;
+    margin: auto;
+  }
+}

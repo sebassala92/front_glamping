@@ -21,6 +21,13 @@
       text-align: center;
     }
 
+    .text_2 {
+      font-weight: 600;
+      width: 90vw;
+      max-width: 500px;
+      text-align: center;
+    }
+
     .yellow_text {
       color: $yellow;
     }
@@ -55,7 +62,7 @@
     justify-content: center;
 
     .logo_2 {
-      margin: 20px;
+      margin: 10px 20px;
       height: 100px;
       width: 100px;
       background: url("../../icon/calendar.png") no-repeat;

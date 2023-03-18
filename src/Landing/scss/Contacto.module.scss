@@ -1,0 +1,94 @@
+@import "../../styles/variables.scss";
+
+.main {
+  width: 100%;
+
+  .cont_text {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .logo_1 {
+      margin: 40px 0 10px;
+      height: 40px;
+      width: 100px;
+      background: url("../../icon/icono-varios.png") no-repeat;
+      background-size: 90%;
+      background-position: center;
+    }
+
+    .logo_2 {
+      height: 130px;
+      width: 130px;
+      background: url("../../img/reserva/calendar.png") no-repeat;
+      background-size: 90%;
+      background-position: center;
+
+      position: absolute;
+      bottom: 1px;
+      left: 66%;
+    }
+
+    .logo_3 {
+      position: absolute;
+      height: 130px;
+      width: 130px;
+      background: url("../../img/reserva/map.png") no-repeat;
+      background-size: 90%;
+      background-position: center;
+
+      position: absolute;
+      top: 1px;
+      right: 66%;
+    }
+
+    .text_1 {
+      width: 90vw;
+      max-width: 600px;
+      text-align: center;
+      font-weight: 500;
+    }
+  }
+
+  .cont_wp {
+    width: 100%;
+    position: relative;
+    margin: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .cont_logo {
+      margin: 40px 0 10px;
+      height: 80px;
+      width: 80px;
+      background: url("../../img/reserva/wp.png") no-repeat;
+      background-size: 90%;
+      background-position: center;
+    }
+
+    .btn {
+      width: 150px;
+      height: 40px;
+      margin: 20px;
+      background-color: #166291;
+      color: white;
+      border-radius: 50px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .text_2 {
+      font-weight: 600;
+    }
+  }
+}

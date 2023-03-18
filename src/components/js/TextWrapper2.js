@@ -2,7 +2,7 @@ import React from 'react'
 
 import classes from '../scss/TextWrapper.module.scss'
 
-const TextWrapper = () => {
+const TextWrapper2 = () => {
   return (
     <article className={classes.text_wrapper}>
         <div className={classes.cont_1}>
@@ -20,7 +20,7 @@ const TextWrapper = () => {
 
             </div>
 
-            <p className={classes.text}>
+            <p className={classes.text_2}>
             <span className={classes.weigth}>¡Estamos aquí para guiarte!</span><br></br>
             Haz tu reserva abajo o comunícate con nosotros
             para que tu experiencia sea todo un hecho.
@@ -32,4 +32,4 @@ const TextWrapper = () => {
   )
 }
 
-export default TextWrapper
+export default TextWrapper2
