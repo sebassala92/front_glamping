@@ -1,5 +1,7 @@
 import React from 'react'
 
+import classes from '../scss/Reserva.module.scss'
+
 import SecondBanner from "../../components/js/SecondBanner";
 
 const Reserva = () => {
@@ -8,7 +10,6 @@ const Reserva = () => {
     name: 'DOMO 1',
     urlImage: '../img/domo1/domo1.png',
     urlImage2: '../img/domo1/domo1.png',
-    text: '¡Experimenta la comodidad y el lujo en plena naturaleza con nuestro Domo Glamping. Este alojamiento único te permitirá disfrutar de las estrellas desde la comodidad de tu propia cama, gracias a su techo transparente. Equipado con todas las comodidades necesarias, el Domo Glamping es perfecto para aquellos que buscan una experiencia de camping sin sacrificar la comodidad.',
     photoList : {
       photo_1: '../img/domo1/photo1.png',
       photo_2: '../img/domo1/photo2.png',
@@ -23,6 +24,26 @@ const Reserva = () => {
   return (
     <div>
       <SecondBanner urlImage={props.urlImage}/>
+
+      <div className={classes.cont_text}>
+        
+      <div className={classes.logo_1}></div>
+
+      <div className={classes.logo_2}></div>
+
+      <div className={classes.logo_3}></div>
+
+        <p className={classes.text_1}>
+          "¡Reserva ahora y vive una experiencia única en la naturaleza!
+          En nuestra sección de reservas, podrás elegir entre nuestras 
+          dos opciones de glamping, el Domo Glamping y La Casita Carpintera 
+          Glamping. Con opciones de reserva flexibles y una atención al 
+          cliente excepcional, estamos comprometidos a brindarte la mejor 
+          experiencia de alojamiento. ¡Haz tu reserva hoy y prepárate para 
+          disfrutar de la naturaleza con estilo!"
+        </p>
+      </div>
+
     </div>
   )
 }
