@@ -2,10 +2,11 @@ import React from 'react'
  
 import classes from '../scss/MainBanner.module.scss'
 
-const MainBanner = ({name_url}) => {
+const MainBanner = ({title, url_img}) => {
   return (
     <article className={classes.article_main_banner}>
-      <img src={name_url.urlImage} alt="" />
+      <h2 className={classes.title}>{title}</h2>
+      <img src={url_img} alt="" />
     </article>
   )
 }

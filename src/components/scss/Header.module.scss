@@ -22,14 +22,17 @@
     }
 
     &__nav {
-      width: 500px;
       display: flex;
       flex-direction: row;
 
       ul {
-        width: 500px;
+        width: 800px;
         display: flex;
         flex-direction: row;
+
+        li {
+          width: 100px;
+        }
       }
     }
   }

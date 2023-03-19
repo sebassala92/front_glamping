@@ -1,10 +1,12 @@
 import React from 'react'
 
 import classes from '../scss/Finder.module.scss'
-import Calendar from './Calendar';
+import CalendarTemplate from 'availability-calendar-react';
+
 
 
 const Finder = () => {
+  
   return (
     <article className={classes.finder}>
 
@@ -12,7 +14,7 @@ const Finder = () => {
 
         <div className={classes.cont_1}>
 
-          <p>Inicio estadía y finalización</p>
+          <p className={classes.title}>Inicio estadía y finalización</p>
 
           <div className={classes.display}></div>    
 
@@ -20,15 +22,21 @@ const Finder = () => {
 
         <div className={classes.cont_1}>
 
-          <p>Inicio estadía y finalización</p>
+          <p className={classes.title}>Cantidad de personas</p>
 
           <div className={classes.display}></div>    
                 
         </div>
 
-        <div className={classes.btn}>
-          
-      </div>
+        <div className={classes.cont_1}>
+
+          <p className={classes.space}></p>
+
+          <div className={classes.btn}>BUSCAR</div>
+ 
+                
+        </div>
+
 
       </div>
 
