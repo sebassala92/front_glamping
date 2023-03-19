@@ -6,16 +6,39 @@ import Calendar from './Calendar';
 
 const Finder = () => {
   return (
-    <div className={classes.cont_1}>
+    <article className={classes.finder}>
+
+      <div className={classes.search}>
+
+        <div className={classes.cont_1}>
+
+          <p>Inicio estadía y finalización</p>
+
+          <div className={classes.display}></div>    
+
+        </div>
+
+        <div className={classes.cont_1}>
+
+          <p>Inicio estadía y finalización</p>
+
+          <div className={classes.display}></div>    
+                
+        </div>
+
+        <div className={classes.btn}>
+          
+      </div>
+
+      </div>
 
       <div className={classes.cont_2}>
         <div className={classes.cont_3}></div>
         <div className={classes.cont_4}></div>
-        <div className={classes.cont_5}></div>
-        
+        <div className={classes.cont_5}></div>      
       </div>
 
-    </div>
+    </article>
   )
 }
 

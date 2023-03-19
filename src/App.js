@@ -1,5 +1,4 @@
 import {
-  BrowserRouter as Router, 
   Routes,
   Route
 } from 'react-router-dom';
@@ -19,7 +18,6 @@ function App() {
     <>
       <Header />
 
-      <Router>
         <Routes>
           <Route  path="/" element={ <Home />}/>
           <Route  path="/domo1" element={ <Landing2/> }/>
@@ -29,7 +27,6 @@ function App() {
           <Route  path="/contacto" element={ <Contacto/> }/>
           <Route  path="/escapada" element={ <Escapada/> }/>
         </Routes>
-      </Router>
 
       <Footer />
     </>
