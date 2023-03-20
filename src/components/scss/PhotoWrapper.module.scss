@@ -4,9 +4,25 @@
   width: 100%;
 
   .cont_1 {
-    width: 500px;
-    height: 500px;
+    width: 90vw;
+    max-width: 1000px;
     margin: auto;
-    background-color: blue;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    cont_2 {
+      width: 40vw;
+      height: 40vw;
+      max-width: 180px;
+      max-height: 180px;
+      overflow: hidden;
+      margin: 10px;
+
+      .img {
+      }
+    }
   }
 }
