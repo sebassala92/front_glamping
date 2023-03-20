@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Calendar from 'react-calendar';
 
 import classes from '../scss/Finder.module.scss'
-import CalendarTemplate from 'availability-calendar-react';
 
 
 
 const Finder = () => {
+
+  const [value, onChange] = useState(new Date());
   
   return (
     <article className={classes.finder}>
@@ -41,7 +43,9 @@ const Finder = () => {
       </div>
 
       <div className={classes.cont_2}>
-        <div className={classes.cont_3}></div>
+        <div className={classes.cont_3}>
+        <Calendar onChange={onChange} value={value} />
+        </div>
         <div className={classes.cont_4}></div>
         <div className={classes.cont_5}></div>      
       </div>
