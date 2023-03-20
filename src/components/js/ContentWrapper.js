@@ -8,7 +8,12 @@ const ContentWrapper = (props) => {
 
         <div className={classes.cont_1}>
 
-            <div className={classes.cont_2}></div>
+            <div className={classes.cont_2}>
+              <img 
+                className={classes.img} 
+                src={require(`../../img/${props.url_img}`)} 
+                alt="Foto Domo 1" />
+            </div>
 
             <div className={classes.cont_3}>
 
