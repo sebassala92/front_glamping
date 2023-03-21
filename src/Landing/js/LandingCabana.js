@@ -6,10 +6,10 @@ import MainBanner from "../../components/js/MainBanner";
 import ContentWrapper from "../../components/js/ContentWrapper";
 import PhotoWrapper from "../../components/js/PhotoWrapper";
 
-const Landingdomo1 = () => {
+const Cabana = () => {
 
   const props_main_banner = {
-    title: 'CABAÑA',
+    name: 'CABAÑA',
     url_img: 'cabana/cabana.png',
   }
 
@@ -20,22 +20,23 @@ const Landingdomo1 = () => {
   }
 
   const props_photo_wrapper = {
-    photoList : {
-      // photo_1: 'domo1/photo1.png',
-      // photo_2: 'domo1/photo2.png',
-      // photo_3: 'domo1/photo3.png',
-      // photo_4: 'domo1/photo4.png',
-      // photo_5: 'domo1/photo5.png',
-      // photo_6: 'domo1/photo6.png',
-      // photo_7: 'domo1/photo7.png'
-    } 
+    photoList :[
+      'cabana/photo1.png',
+      'cabana/photo2.png',
+      'cabana/photo3.png',
+      'cabana/photo4.png',
+      'cabana/photo5.png',
+      'cabana/photo6.png',
+      'cabana/photo7.png',
+      'cabana/photo8.png'
+    ]
   }
 
   return (
     <div className={classes.main}>
 
       <MainBanner 
-        title={props_main_banner.title} 
+        name={props_main_banner.name} 
         url_img={props_main_banner.url_img}  
       />
 
@@ -59,10 +60,10 @@ const Landingdomo1 = () => {
         text={props_content_wrapper.text}
       />
       
-      <PhotoWrapper photoList={props_photo_wrapper.photoList} />
+      <PhotoWrapper photo_list={props_photo_wrapper.photoList} />
 
     </div>
   )
 }
 
-export default Landingdomo1
+export default Cabana

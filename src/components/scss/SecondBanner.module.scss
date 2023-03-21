@@ -1,17 +1,26 @@
 @import "../../styles/variables.scss";
 
-.article_second_banner {
+.main {
   width: 100%;
   height: 300px;
-  background-color: red;
   display: flex;
   flex-direction: column;
+  position: relative;
 
-  img {
+  .cont_1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
     background-position: center;
+  }
+
+  .title {
+    color: white;
+    font-size: 5em;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
   }
 
   @include breakpoint(md) {

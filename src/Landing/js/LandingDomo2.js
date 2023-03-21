@@ -9,7 +9,7 @@ import PhotoWrapper from "../../components/js/PhotoWrapper";
 const Landingdomo2 = () => {
 
   const props_main_banner = {
-    title: 'DOMO 2',
+    name: 'DOMO 2',
     url_img: 'domo_2/domo2.png',
   }
 
@@ -20,22 +20,21 @@ const Landingdomo2 = () => {
   }
 
   const props_photo_wrapper = {
-    photoList : {
-      photo_1: 'domo1/photo1.png',
-      photo_2: 'domo1/photo2.png',
-      photo_3: 'domo1/photo3.png',
-      photo_4: 'domo1/photo4.png',
-      photo_5: 'domo1/photo5.png',
-      photo_6: 'domo1/photo6.png',
-      photo_7: 'domo1/photo7.png'
-    } 
+    photoList : [
+      'domo_2/photo1.png',
+      'domo_2/photo2.png',
+      'domo_2/photo3.png',
+      'domo_2/photo4.png',
+      'domo_2/photo5.png',
+      'domo_2/photo6.png',
+    ] 
   }
 
   return (
     <div className={classes.main}>
 
       <MainBanner 
-        title={props_main_banner.title} 
+        name={props_main_banner.name} 
         url_img={props_main_banner.url_img}  
       />
 
@@ -59,7 +58,7 @@ const Landingdomo2 = () => {
         text={props_content_wrapper.text}
       />
       
-      <PhotoWrapper photoList={props_photo_wrapper.photoList} />
+      <PhotoWrapper photo_list={props_photo_wrapper.photoList} />
 
     </div>
   )

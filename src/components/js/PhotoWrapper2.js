@@ -9,7 +9,7 @@ const PhotoWrapper = (props) => {
   return (
     <article className={classes.photo_wrapper}>
 
-      <div className={classes.cont_1}>
+      <div className={classes.cont_2}>
         {
 
           props.photo_list.map(person => 

@@ -8,7 +8,7 @@ const MainBanner = (props) => {
 
     <article className={classes.main}>
 
-      <h2 className={classes.title}>{props.title}</h2>
+      <h2 className={classes.title}>{props.name}</h2>
 
       <img 
         className={classes.cont_1} 

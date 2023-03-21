@@ -3,29 +3,62 @@ import React from 'react'
 import classes from '../scss/Escapada.module.scss'
 
 import MainBanner from "../../components/js/MainBanner";
-import PhotoWrapper from "../../components/js/PhotoWrapper";
+import PhotoWrapper2 from "../../components/js/PhotoWrapper2";
 
 const Escapada = () => {
 
-  const props = {
-    name: 'DOMO 1',
-    urlImage: '../img/domo1/domo1.png',
-    urlImage2: '../img/domo1/domo1.png',
-    photoList : {
-      photo_1: '../img/domo1/photo1.png',
-      photo_2: '../img/domo1/photo2.png',
-      photo_3: '../img/domo1/photo3.png',
-      photo_4: '../img/domo1/photo4.png',
-      photo_5: '../img/domo1/photo5.png',
-      photo_6: '../img/domo1/photo6.png',
-      photo_7: '../img/domo1/photo7.png'
-    }
+  const props_main_banner = {
+    name: 'DATE UNA ESCAPADA',
+    url_img: 'galeria/banner.png',
+  }
+
+  const props_photo_wrapper = {
+    photoList : [
+      'galeria/photo1.png',
+      'galeria/photo2.png',
+      'galeria/photo3.png',
+      'galeria/photo4.png',
+      'galeria/photo5.png',
+      'galeria/photo6.png',
+      'galeria/photo7.png',
+      'galeria/photo8.png',
+      'galeria/photo9.png',
+      'galeria/photo10.png',
+      'galeria/photo11.png',
+      'galeria/photo12.png',
+      'galeria/photo13.png',
+      'galeria/photo14.png',
+      'galeria/photo15.png',
+      'galeria/photo16.png',
+      'galeria/photo17.png',
+      'galeria/photo18.png',
+      'galeria/photo19.png',
+      'galeria/photo20.png',
+      'galeria/photo21.png',
+      'galeria/photo22.png',
+      'galeria/photo23.png',
+      'galeria/photo24.png',
+      'galeria/photo25.png',
+      'galeria/photo26.png',
+      'galeria/photo27.png',
+      'galeria/photo28.png',
+      'galeria/photo29.png',
+      'galeria/photo30.png',
+      'galeria/photo31.png',
+      'galeria/photo32.png',
+      'galeria/photo33.png',
+      'galeria/photo34.png',
+      'galeria/photo35.png',
+    ] 
   }
 
   return (
     <div className={classes.main}>
 
-      <MainBanner urlImage={props.urlImage}/>
+      <MainBanner 
+        name={props_main_banner.name}
+        url_img={props_main_banner.url_img}
+      />
 
       <div className={classes.cont_text}>
         
@@ -45,7 +78,7 @@ const Escapada = () => {
 
       </div>
 
-      <PhotoWrapper />
+      <PhotoWrapper2 photo_list={props_photo_wrapper.photoList} />
 
     </div>
   )

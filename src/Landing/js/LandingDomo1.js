@@ -9,7 +9,7 @@ import PhotoWrapper from "../../components/js/PhotoWrapper";
 const Landingdomo1 = () => {
 
   const props_main_banner = {
-    title: 'DOMO 1',
+    name: 'DOMO 1',
     url_img: 'domo_1/domo1.png',
   }
 
@@ -35,7 +35,7 @@ const Landingdomo1 = () => {
     <div className={classes.main}>
 
       <MainBanner 
-        title={props_main_banner.title} 
+        name={props_main_banner.name} 
         url_img={props_main_banner.url_img}  
       />
 

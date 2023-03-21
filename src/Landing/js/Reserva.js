@@ -8,25 +8,18 @@ import TextWrapper2 from "../../components/js/TextWrapper2";
 
 const Reserva = () => {
 
-  const props = {
-    name: 'DOMO 1',
-    urlImage: '../img/domo1/domo1.png',
-    urlImage2: '../img/domo1/domo1.png',
-    photoList : {
-      photo_1: '../img/domo1/photo1.png',
-      photo_2: '../img/domo1/photo2.png',
-      photo_3: '../img/domo1/photo3.png',
-      photo_4: '../img/domo1/photo4.png',
-      photo_5: '../img/domo1/photo5.png',
-      photo_6: '../img/domo1/photo6.png',
-      photo_7: '../img/domo1/photo7.png'
-    }
+  const props_second_banner = {
+    name: 'RESERVA',
+    url_img: 'reserva/sky.png',
   }
 
   return (
     <div className={classes.main}>
 
-      <SecondBanner urlImage={props.urlImage}/>
+      <SecondBanner 
+        name = {props_second_banner.name}
+        url_img = {props_second_banner.url_img}
+      />
 
       <div className={classes.cont_text}>
         
