@@ -3,7 +3,7 @@ import React from 'react'
 import classes from '../scss/Contacto.module.scss'
 
 import SecondBanner from "../../components/js/SecondBanner";
-import Informacion from "../../components/js/Informacion";
+import ContactCard from "../../components/js/ContactCard";
 import Mapa from "../../components/js/Mapa";
 
 const Contacto = () => {
@@ -37,7 +37,7 @@ const Contacto = () => {
 
       </div>
 
-      <Informacion />
+      <ContactCard />
       
       <Mapa />
 

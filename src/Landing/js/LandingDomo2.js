@@ -4,6 +4,7 @@ import classes from '../scss/LandingEspacio.module.scss'
 
 import MainBanner from "../../components/js/MainBanner";
 import ContentWrapper from "../../components/js/ContentWrapper";
+import Finder2 from "../../components/js/Finder2";
 import PhotoWrapper from "../../components/js/PhotoWrapper";
 
 const Landingdomo2 = () => {
@@ -57,6 +58,9 @@ const Landingdomo2 = () => {
         url_img={props_content_wrapper.url_img} 
         text={props_content_wrapper.text}
       />
+
+      <Finder2 />
+
       
       <PhotoWrapper photo_list={props_photo_wrapper.photoList} />
 
