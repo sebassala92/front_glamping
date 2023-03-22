@@ -3,6 +3,8 @@ import Calendar from 'react-calendar';
 
 import classes from '../scss/Finder.module.scss'
 
+import PhotoCard from '../js/PhotoCard'
+
 
 
 const Finder = () => {
@@ -44,10 +46,17 @@ const Finder = () => {
 
       <div className={classes.cont_2}>
         <div className={classes.cont_3}>
-        <Calendar onChange={onChange} value={value} />
+          <Calendar onChange={onChange} value={value} />
         </div>
-        <div className={classes.cont_4}></div>
-        <div className={classes.cont_5}></div>      
+
+        <div className={classes.cont_4}>
+          <PhotoCard />
+        </div>
+
+        <div className={classes.cont_5}>
+          <PhotoCard />
+        </div>    
+
       </div>
 
     </article>
