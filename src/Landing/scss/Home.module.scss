@@ -5,7 +5,8 @@
 
   .text_wrapper {
     .cont_1 {
-      max-width: 1400px;
+      width: 80vw;
+      max-width: 1000px;
       margin: 20px auto 30px;
 
       display: flex;
@@ -13,22 +14,36 @@
       flex-direction: column;
 
       .titulo {
-        font-size: 50px;
+        font-size: 30px;
         text-align: center;
+
+        @include breakpoint(md) {
+          font-size: 50px;
+        }
       }
 
       .text {
+        font-size: 15px;
         font-weight: 500;
         width: 90vw;
         max-width: 500px;
         text-align: center;
+
+        @include breakpoint(md) {
+          font-size: 17px;
+        }
       }
 
       .text_2 {
+        font-size: 15px;
         font-weight: 600;
         width: 90vw;
         max-width: 500px;
         text-align: center;
+
+        @include breakpoint(md) {
+          font-size: 17px;
+        }
       }
 
       .yellow_text {
@@ -50,11 +65,16 @@
 
       .logo_2 {
         margin: 20px;
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
         background: url("../../icon/icono-carpa.png") no-repeat;
         background-size: 90%;
         background-position: center;
+
+        @include breakpoint(md) {
+          height: 200px;
+          width: 200px;
+        }
       }
     }
 
