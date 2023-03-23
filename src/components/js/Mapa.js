@@ -6,7 +6,9 @@ const Mapa = () => {
   return (
     <div className={classes.mapa}>
 
-      <h2 className={classes.titulo}>MAPA</h2>
+      <h2 className={classes.titulo}>
+        
+      </h2>
       
       <div className={classes.cont_mapa}>
 

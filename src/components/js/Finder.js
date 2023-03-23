@@ -53,7 +53,7 @@ const Finder = () => {
           <PhotoCard />
         </div>
 
-        <div className={classes.cont_5}>
+        <div className={classes.cont_4}>
           <PhotoCard />
         </div>    
 
