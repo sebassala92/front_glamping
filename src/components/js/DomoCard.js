@@ -13,22 +13,34 @@ const DomoCard = (props) => {
 
       <h2 className={classes.title_1}>{props.name}</h2>
 
-      <div className={classes.cont_2}></div>
+      <div className={classes.cont_2}>
 
-      <Carousel>
-        <div>
-          <img src="assets/1.jpeg" />
-          <p className="legend">Legend 1</p>
-        </div>
-        <div>
-          <img src="assets/2.jpeg" />
-          <p className="legend">Legend 2</p>
-        </div>
-        <div>
-          <img src="assets/3.jpeg" />
-          <p className="legend">Legend 3</p>
-        </div>
-      </Carousel>
+        <Carousel autoPlay='true' infiniteLoop='true'>
+          <div>
+            <img 
+              src={require(`../../img/general/carru1.png`)} 
+              alt=''
+            />
+          </div>
+
+          <div>
+            <img 
+              src={require(`../../img/general/carru2.png`)} 
+              alt='' />
+          </div>
+
+          <div>
+            <img 
+              src={require(`../../img/general/carru3.png`)} 
+              alt='' />
+          </div>
+
+        </Carousel>
+
+      </div>
+
+      <btn className={classes.btn}>ver más</btn>
+
       
     </div>
   )
