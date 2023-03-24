@@ -4,7 +4,7 @@
   width: 90vw;
   height: 300vw;
   max-width: 400px;
-  max-height: 500px;
+  max-height: 600px;
   margin: 20px 0;
 
   .title_1 {
@@ -24,9 +24,13 @@
     max-width: 300px;
     max-height: 280px;
     margin: auto;
+  }
 
-    // background: url("../../img/general/rectangle_1.png") no-repeat;
-    // background-size: 100%;
-    // background-position: center;
+  .btn {
+    text-align: center;
+  }
+
+  .carousel-status {
+    display: none;
   }
 }
