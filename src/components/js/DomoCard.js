@@ -18,7 +18,7 @@ const DomoCard = (props) => {
         <Carousel 
           autoPlay='true' 
           infiniteLoop='true'>
-            
+
           <div>
             <img 
               src={require(`../../img/general/carru1.png`)} 
@@ -43,7 +43,6 @@ const DomoCard = (props) => {
       </div>
 
       <btn className={classes.btn}>ver más</btn>
-
       
     </div>
   )

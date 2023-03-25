@@ -13,6 +13,7 @@ import LandingCabana from "./Landing/js/LandingCabana";
 import Reserva from "./Landing/js/Reserva";
 import Contacto from "./Landing/js/Contacto";
 import Escapada from "./Landing/js/Escapada";
+import PruebaPadre from './Landing/js/PruebaPadre';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
           <Route  path="/reserva" element={ <Reserva/> }/>
           <Route  path="/contacto" element={ <Contacto/> }/>
           <Route  path="/escapada" element={ <Escapada/> }/>
+          <Route  path="/prueba" element={ <PruebaPadre/> }/>
         </Routes>
 
       <Footer />
