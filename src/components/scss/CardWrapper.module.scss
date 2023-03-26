@@ -2,7 +2,6 @@
 
 .card_Wrapper {
   .cont_1 {
-    height: 1500px;
     max-width: 1400px;
     margin: auto;
 
@@ -11,8 +10,6 @@
     flex-direction: column;
 
     @include breakpoint(md) {
-      height: 550px;
-
       flex-direction: row;
       justify-content: space-evenly;
     }

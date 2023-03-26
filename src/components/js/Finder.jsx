@@ -41,7 +41,6 @@ const Finder = () => {
                 
         </div>
 
-
       </div>
 
       <div className={classes.cont_2}>

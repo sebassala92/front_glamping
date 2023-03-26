@@ -4,7 +4,6 @@ import classes from '../scss/Reserva.module.scss'
 
 import SecondBanner from "../../components/js/SecondBanner";
 import Finder from "../../components/js/Finder";
-import TextWrapper2 from "../../components/js/TextWrapper2";
 
 const Reserva = () => {
 
@@ -43,7 +42,31 @@ const Reserva = () => {
 
       <Finder />
 
-      <TextWrapper2 />
+      <article className={classes.text_wrapper}>
+        <div className={classes.cont_1}>
+
+            <div className={classes.logo_1}></div>
+
+            
+            <div className={classes.cont_2}>
+
+              <div className={classes.logo_2}></div>
+
+              <h2 className={classes.titulo}>
+                  RESERVAS
+              </h2>
+
+            </div>
+
+            <p className={classes.text_2}>
+            <span className={classes.weigth}>¡Estamos aquí para guiarte!</span><br></br>
+            Haz tu reserva abajo o comunícate con nosotros
+            para que tu experiencia sea todo un hecho.
+            </p>
+
+
+        </div>      
+      </article>
 
       <div className={classes.cont_wp}>
 

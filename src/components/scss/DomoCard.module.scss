@@ -2,9 +2,7 @@
 
 .cont_1 {
   width: 90vw;
-  height: 300vw;
   max-width: 400px;
-  max-height: 600px;
   margin: 20px 0;
 
   .title_1 {
@@ -12,22 +10,30 @@
     margin: 20px 0;
     font-size: 30px;
     text-align: center;
-
-    @include breakpoint(md) {
-      font-size: 40px;
-    }
   }
 
   .cont_2 {
     width: 60vw;
-    height: 60vw;
+    height: 85vw;
     max-width: 300px;
     max-height: 420px;
     margin: auto;
+
+    @include breakpoint(md) {
+      height: 60vw;
+    }
   }
 
   .btn {
-    text-align: center;
+    height: 40px;
+    width: 150px;
+    margin: 20px auto;
+    border-radius: 25px;
+    border: 2px solid $yellow;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .carousel-status {

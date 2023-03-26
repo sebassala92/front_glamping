@@ -3,7 +3,6 @@ import React from 'react'
 import classes from '../scss/Home.module.scss'
 
 import MainVideo from "../../components/js/MainVideo";
-import TextWrapper2 from "../../components/js/TextWrapper2";
 import CardWrapper from "../../components/js/CardWrapper";
 import Finder from "../../components/js/Finder";
 
@@ -44,7 +43,31 @@ const Home = () => {
 
       <CardWrapper />
 
-      <TextWrapper2 />
+      <article className={classes.text_wrapper}>
+        <div className={classes.cont_1}>
+
+            <div className={classes.logo_1}></div>
+
+            
+            <div className={classes.cont_2}>
+
+              <div className={classes.logo_2}></div>
+
+              <h2 className={classes.titulo}>
+                  RESERVAS
+              </h2>
+
+            </div>
+
+            <p className={classes.text_2}>
+            <span className={classes.weigth}>¡Estamos aquí para guiarte!</span><br></br>
+            Haz tu reserva abajo o comunícate con nosotros
+            para que tu experiencia sea todo un hecho.
+            </p>
+
+
+        </div>      
+    </article>
 
       <Finder />
       
