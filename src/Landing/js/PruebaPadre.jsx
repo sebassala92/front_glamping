@@ -6,10 +6,10 @@ import TestComp from "../../components/js/PruebaHijo";
 
 const PruebaPadre = () => {
 
-  const [datos, estableceDatos] = useState('');
+  const [suma, setSuma] = useState(0);
 
-  const padreAHijo = () => {
-    estableceDatos("Esta es la data del componente Padre al componente Hijo.");
+  const aumentar = () => {
+    setSuma (suma + 2)
   }
 
   const props_second_banner = {
@@ -17,17 +17,25 @@ const PruebaPadre = () => {
     url_img: 'contacto/lago.png',
   }
 
+  const [suma2, setSuma2] = (0);
+
+  const aumentar2 = () => {
+    setSuma2 (suma2 + 3)
+  }
+
+
+
   return (
     <div className={classes.main}>
 
       <TestComp 
         name={props_second_banner.name}
         url_img={props_second_banner.url_img}
+        suma={suma}
+        eventosumar={aumentar2}
       />
 
-    <button>sumar</button>
-
-    <div>mostrar información desde el hijo en el padre:</div>
+    <div>mostrar información desde el hijo en el padre: {suma2}</div>
 
 
 

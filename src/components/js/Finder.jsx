@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 
 import classes from '../scss/Finder.module.scss'
 
-import PhotoCard from '../js/PhotoCard'
+import PhotoCard from './PhotoCard'
 
 
 

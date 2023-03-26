@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
  
 import classes from '../scss/Test.module.scss'
 
 const PruebaHijo = (props) => {
+
+  // const eventosumar = (event) => {
+    
+  // }
+
 
   return (
 
@@ -15,9 +20,9 @@ const PruebaHijo = (props) => {
         src={require(`../../img/${props.url_img}`)} 
         alt="" />
 
-      <button>sumar</button>
+      <button onClick={props.eventosumar}>sumar</button>
 
-      <div>mostrar informacion desde el padre en el hijo:</div>
+      <div>mostrar informacion desde el padre en el hijo: {props.suma}</div>
 
     </article>
   )
