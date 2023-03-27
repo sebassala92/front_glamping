@@ -23,28 +23,42 @@
     }
 
     .logo_2 {
-      height: 130px;
-      width: 130px;
+      height: 100px;
+      width: 100px;
       background: url("../../img/reserva/calendar.png") no-repeat;
       background-size: 90%;
       background-position: center;
 
       position: absolute;
-      bottom: 1px;
-      left: 66%;
+      bottom: -65px;
+      left: 69%;
+
+      @include breakpoint(md) {
+        height: 130px;
+        width: 130px;
+        bottom: 1px;
+        left: 66%;
+      }
     }
 
     .logo_3 {
       position: absolute;
-      height: 130px;
-      width: 130px;
+      height: 100px;
+      width: 100px;
       background: url("../../img/reserva/map.png") no-repeat;
       background-size: 90%;
       background-position: center;
 
       position: absolute;
-      top: 1px;
-      right: 66%;
+      top: -6px;
+      right: 72%;
+
+      @include breakpoint(md) {
+        height: 130px;
+        width: 130px;
+        top: 1px;
+        right: 66%;
+      }
     }
 
     .text_1 {

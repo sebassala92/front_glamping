@@ -20,6 +20,43 @@
       width: 80%;
       height: 56vw;
       max-height: 500px;
+
+      position: relative;
+
+      .cont_111 {
+        width: 25vw;
+        max-width: 250px;
+        height: 60%;
+
+        display: flex;
+        flex-direction: column;
+
+        position: absolute;
+        top: 25%;
+        left: 18%;
+
+        .cont_title {
+          .title_1 {
+            font-size: 25px;
+            height: 30px;
+            color: black;
+            font-weight: 700;
+          }
+
+          .title_2 {
+            font-size: 15px;
+            height: 30px;
+            color: black;
+          }
+        }
+
+        .input {
+          margin: 20px 0;
+          border-top-style: hidden;
+          border-right-style: hidden;
+          border-left-style: hidden;
+        }
+      }
     }
 
     .cont_12 {
@@ -48,14 +85,19 @@
       .info {
         width: 90%;
         height: 30px;
-        background-color: white;
         margin: 25px auto;
+
+        .text {
+          color: white;
+        }
       }
     }
 
     .cont_14 {
-      width: 50px;
-      height: 50px;
+      width: 5vw;
+      height: 5vw;
+      max-width: 50px;
+      max-height: 50px;
       background-color: #eba214;
 
       position: absolute;
@@ -64,13 +106,18 @@
       transform: translate(0, -50%);
 
       &__2 {
-        width: 50px;
-        height: 50px;
+        width: 5vw;
+        height: 5vw;
+        max-width: 50px;
+        max-height: 50px;
         background-color: #eba214;
         position: absolute;
         left: 54%;
         top: 11%;
       }
     }
+  }
+
+  @include breakpoint(md) {
   }
 }

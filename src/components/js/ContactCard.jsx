@@ -10,8 +10,19 @@ const ContactCard = () => {
 
         <div className={classes.cont_11}>
 
-          <span className={classes.title_1}>DÉJANOS</span><br />
-          <span className={classes.title_2}>Tu mensaje</span>
+          <div className={classes.cont_111}>
+
+            <div className={classes.cont_title}>
+              <span className={classes.title_1}>DÉJANOS</span><br />
+              <span className={classes.title_2}>Tu mensaje</span>
+            </div>
+
+            <input className={classes.input} type="text" placeholder='nombre'/>
+            <input className={classes.input} type="text" placeholder='correo'/>
+            <input className={classes.input} type="text" placeholder='mensaje'/>
+
+
+          </div>
           
         </div>
 
@@ -24,28 +35,28 @@ const ContactCard = () => {
             <div className={classes.info}>
 
               <span className={classes.logo__mail}></span>
-              <span className={classes.text}></span>
+              <span className={classes.text}>carlosjim84@hotmail.com</span>
 
             </div>
 
             <div className={classes.info}>
 
               <span className={classes.logo__wp}></span>
-              <span className={classes.text}></span>
+              <span className={classes.text}>+57 312 2941890</span>
 
             </div>
 
             <div className={classes.info}>
 
               <span className={classes.logo__clock}></span>
-              <span className={classes.text}></span>
+              <span className={classes.text}>7:00 - 16:00</span>
 
             </div>
 
             <div className={classes.info}>
 
               <span className={classes.logo__place}></span>
-              <span className={classes.text}></span>
+              <span className={classes.text}>Granada - Antioquia</span>
 
             </div>
 

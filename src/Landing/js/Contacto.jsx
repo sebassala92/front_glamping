@@ -38,8 +38,17 @@ const Contacto = () => {
       </div>
 
       <ContactCard />
+
+      <div className={classes.mapa}>
+
+        <h2 className={classes.titulo}>MAPA</h2>
+
+        <div className={classes.cont_mapa}>
+          <Mapa />
+        </div>
+
+      </div>
       
-      <Mapa />
 
 
     </div>
