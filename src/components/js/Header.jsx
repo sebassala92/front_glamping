@@ -10,17 +10,18 @@ import classes from '../scss/Header.module.scss'
 
 const Header = () => {
 
-    // const[menuOpen, setMenuOpen] = useState(false);
+    const[menuOpen, setMenuOpen] = useState(false);
 
-    // const menuToggleHandler = () => {
-    //     setMenuOpen((p) => !p)
-    // };
+    const menuToggleHandler = () => {
+        setMenuOpen((p) => !p)
+    };
 
     return <header className={classes.header}>
 
         <div className={classes.header__content}>
             
-            <h2 className={classes.header__content__logo}></h2>
+            
+            <div className={classes.header__content__logo}></div>
 
             <nav className={classes.header__content__nav}>
 
@@ -54,13 +55,13 @@ const Header = () => {
                     </li>
                 </ul>
 
-                {/* <div className={classes.header__content__toggle}>
+                <div className={classes.header__content__toggle}>
                         {!menuOpen ? (
                             <BiMenuAltRight onClick={menuToggleHandler} />
                         ) : (
                             <AiOutlineClose onClick={menuToggleHandler} />
                         )}
-                </div> */}
+                </div>
 
             </nav>
 
