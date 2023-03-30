@@ -75,7 +75,65 @@
           padding: 0.75rem 1.25rem;
           border-radius: 12px;
           transition: 0.3s ease all;
+
+          &:hover {
+            background: rgb(85, 82, 82, 0.1);
+          }
+
+          &:active {
+            border-radius: calc(#{12px} + 6px);
+            background: linear-gradient(
+              rgba(182, 182, 182, 0.288),
+              rgba(66, 66, 95, 0.253)
+            );
+          }
         }
+      }
+
+      .button {
+        cursor: pointer;
+        outline: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-family: inherit;
+        background: rgba(148, 146, 146, 0.308);
+        color: rgb(134, 134, 134);
+        border: 1px solid transparent;
+        transition: 0.3s ease all;
+
+        &:hover {
+          border-color: red;
+          background: blue;
+          color: red;
+        }
+
+        &:active {
+          border-color: red;
+          background: blue;
+          color: red;
+        }
+      }
+
+      &.isMenu {
+        transform: translate(100%);
+      }
+    }
+
+    &__toggle {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 2rem;
+      transition: 0.3s ease all;
+      position: relative;
+
+      &:hover {
+        color: yellow;
+      }
+
+      @include breakpoint(md) {
+        display: none;
       }
     }
   }
