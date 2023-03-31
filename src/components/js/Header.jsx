@@ -10,7 +10,7 @@ import classes from '../scss/Header.module.scss'
 
 const Header = () => {
 
-    const[menuOpen, setMenuOpen] = useState(false);
+    const[menuOpen, setMenuOpen] = useState(true);
 
     const menuToggleHandler = () => {
         setMenuOpen((p) => !p)
@@ -23,7 +23,7 @@ const Header = () => {
             
             <div className={classes.header__content__logo}></div>
 
-            <nav className={classes.header__content__nav}>
+            <nav className={`${classes.header__content__nav} ${menuOpen ? classes.isMenu : ""}`}>
 
                 <ul>
                     <li>
