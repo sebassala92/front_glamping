@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className={classes.main}>
 
-      {/* <MainVideo /> */}
+      <MainVideo />
 
       <article className={classes.text_wrapper}>
         <div className={classes.cont_1}>
