@@ -60,31 +60,31 @@ const Header = () => {
 
                 <ul>
                     <li>
-                        <Link href="/">Inicio</Link>
+                        <Link to="/">Inicio</Link>
                     </li>
 
                     <li>
-                        <Link href='/domo1'>Domo 1</Link>
+                        <Link to='/domo1'>Domo 1</Link>
                     </li>
 
                     <li>
-                        <Link href='/domo2'>Domo 2</Link>
+                        <Link to='/domo2'>Domo 2</Link>
                     </li>
 
                     <li>
-                        <Link href='/cabana'>Cabaña</Link>
+                        <Link to='/cabana'>Cabaña</Link>
                     </li>
 
                     <li>
-                        <Link href='/reserva'>Reserva</Link>
+                        <Link to='/reserva'>Reserva</Link>
                     </li>
 
                     <li>
-                        <Link href='/contacto'>Contacto</Link>
+                        <Link to='/contacto'>Contacto</Link>
                     </li>
 
                     <li>
-                        <Link href='/escapada'>Galeria</Link>
+                        <Link to='/escapada'>Galeria</Link>
                     </li>
                 </ul>
 
