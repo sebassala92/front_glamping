@@ -20,14 +20,14 @@ const PhotoCard = () => {
 
 
         <div className={classes.cont_3}>
-            <div className={classes.cont_31}></div>
+            {/* <div className={classes.cont_31}></div> */}
             <div className={classes.cont_32}>save upto 70% off</div>
             <div className={classes.cont_33}>$267</div>
             
         </div>
 
         <div className={classes.cont_4}>
-            <div className={classes.cont_41}></div>
+            {/* <div className={classes.cont_41}></div> */}
             <div className={classes.cont_42}>98 people viewing now</div>
         </div>
       

@@ -33,11 +33,11 @@
     }
 
     &__nav {
-      top: 0;
-      right: 100%;
+      top: 120px;
+      right: -40%;
       bottom: 0;
-      width: 100%;
-      height: 100vh;
+      width: 40%;
+      height: calc(100vh - 120px);
       position: fixed;
       display: flex;
       flex-direction: column;
@@ -128,7 +128,7 @@
       }
 
       &.isMenu {
-        transform: translate(100%);
+        transform: translate(-100%);
       }
     }
 

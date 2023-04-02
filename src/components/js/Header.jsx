@@ -17,6 +17,19 @@ const Header = () => {
         height: undefined,
     })
 
+    const handleScroll = () => {
+        setMenuOpen(false)
+    };
+
+    const menuToggleHandler = () => {
+        setMenuOpen((p) => !p)
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+
     useEffect(() => {
         const handleResize = () => {
             setSize({
@@ -35,9 +48,6 @@ const Header = () => {
         }
     }, [size.width, menuOpen])
 
-    const menuToggleHandler = () => {
-        setMenuOpen((p) => !p)
-    };
 
     return <header className={classes.header}>
 
@@ -78,15 +88,15 @@ const Header = () => {
                     </li>
                 </ul>
 
-                <div className={classes.header__content__toggle}>
-                        {!menuOpen ? (
-                            <BiMenuAltRight onClick={menuToggleHandler} />
-                        ) : (
-                            <AiOutlineClose onClick={menuToggleHandler} />
-                        )}
-                </div>
-
             </nav>
+
+            <div className={classes.header__content__toggle}>
+                    {!menuOpen ? (
+                        <BiMenuAltRight onClick={menuToggleHandler} />
+                    ) : (
+                        <BiMenuAltRight onClick={menuToggleHandler} />
+                    )}
+            </div>
 
         </div>
 

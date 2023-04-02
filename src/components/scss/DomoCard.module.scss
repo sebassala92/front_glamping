@@ -2,22 +2,26 @@
 
 .cont_1 {
   width: 90vw;
-  max-width: 400px;
+  max-width: 500px;
   margin: 20px 0;
 
   .title_1 {
     width: 100%;
-    margin: 20px 0;
+    margin: 5px 0;
     font-size: 30px;
     text-align: center;
   }
 
   .cont_2 {
-    width: 60vw;
-    height: 85vw;
+    width: 80vw;
+    height: 105vw;
     max-width: 300px;
     max-height: 420px;
     margin: auto;
+
+    .carousel-root {
+      display: none;
+    }
 
     @include breakpoint(md) {
       height: 60vw;
@@ -34,9 +38,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .carousel-status {
-    display: none;
   }
 }

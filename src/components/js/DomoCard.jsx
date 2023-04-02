@@ -17,7 +17,8 @@ const DomoCard = (props) => {
 
         <Carousel 
           autoPlay='true' 
-          infiniteLoop='true'>
+          infiniteLoop='true'
+          emulateTouch='true'>
 
           <div>
             <img 
