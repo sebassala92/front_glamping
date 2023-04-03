@@ -14,11 +14,10 @@
     box-shadow: 5px 5px 20px -6px rgba(128, 128, 128, 1);
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
     .cont_11 {
-      width: 80%;
-      height: 56vw;
+      height: 105vw;
       max-height: 500px;
 
       position: relative;
@@ -57,23 +56,31 @@
           border-left-style: hidden;
         }
       }
+
+      @include breakpoint(md) {
+        height: 56vw;
+        max-height: 500px;
+      }
     }
 
     .cont_12 {
+      display: none;
       width: 20%;
       height: 56vw;
       max-height: 500px;
       background-color: #eba214;
+
+      @include breakpoint(md) {
+        display: inline;
+      }
     }
 
     .cont_13 {
-      width: 350px;
-      height: 350px;
+      width: 90vw;
+      height: 90vw;
       background-color: #000000;
-      position: absolute;
       right: 0;
       top: 50%;
-      transform: translate(0, -50%);
 
       .titulo {
         margin: 20px auto 10px;
@@ -90,6 +97,13 @@
         .text {
           color: white;
         }
+      }
+
+      @include breakpoint(md) {
+        position: absolute;
+        transform: translate(0, -50%);
+        width: 350px;
+        height: 350px;
       }
     }
 
@@ -112,12 +126,24 @@
         max-height: 50px;
         background-color: #eba214;
         position: absolute;
-        left: 54%;
-        top: 11%;
+        left: 80%;
+        top: 6%;
+      }
+
+      @include breakpoint(md) {
+        left: 0;
+        top: 50%;
+
+        &__2 {
+          left: 54%;
+          top: 11%;
+        }
       }
     }
-  }
 
-  @include breakpoint(md) {
+    @include breakpoint(md) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }

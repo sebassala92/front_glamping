@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Stepper from "../../components/js/Stepper";
+
 import classes from '../scss/PhotoCard.module.scss'
 
 const PhotoCard = () => {
@@ -33,9 +35,6 @@ const PhotoCard = () => {
               {/* <div className={classes.cont_41}></div> */}
               <div className={classes.cont_42}>98 people viewing now</div>
           </div>
-
-
-
         
       </div>
 

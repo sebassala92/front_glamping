@@ -63,7 +63,6 @@
 
   .cont_2 {
     width: 90%;
-    height: 100%;
     max-width: 980px;
     margin: auto;
 
@@ -72,12 +71,7 @@
     justify-content: space-around;
     align-items: center;
 
-    .cont_3 {
-      width: 300px;
-      height: 300px;
-    }
-
-    .cont_4 {
+    .cont_22 {
       margin: 10px auto;
 
       width: 300px;
@@ -88,11 +82,26 @@
       box-shadow: 5px 5px 20px -6px rgba(128, 128, 128, 1);
     }
 
+    .cont_23 {
+      margin: 10px auto;
+      padding: 15px;
+      width: 300px;
+      height: 370px;
+
+      -webkit-box-shadow: 5px 5px 20px -6px rgba(128, 128, 128, 1);
+      -moz-box-shadow: 5px 5px 20px -6px rgba(128, 128, 128, 1);
+      box-shadow: 5px 5px 20px -6px rgba(128, 128, 128, 1);
+
+      &.isOpen {
+        display: none;
+      }
+    }
+
     @include breakpoint(md) {
       display: flex;
       flex-direction: row;
 
-      .cont_4 {
+      .cont_22 {
         margin: 0;
       }
     }
