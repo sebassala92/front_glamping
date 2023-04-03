@@ -19,14 +19,21 @@ const Finder = () => {
 
   const open1 = () => {
     setStepperOpen1((p) => !p)
+    setStepperOpen2(() => true)
+    setStepperOpen3(() => true)
+    
   };
 
   const open2 = () => {
-    setStepperOpen2((p) => !p)
+    setStepperOpen2((p) => !p)    
+    setStepperOpen1(() => true)
+    setStepperOpen3(() => true)
   };
 
   const open3 = () => {
     setStepperOpen3((p) => !p)
+    setStepperOpen2(() => true)
+    setStepperOpen1(() => true)
   };
   
   return (

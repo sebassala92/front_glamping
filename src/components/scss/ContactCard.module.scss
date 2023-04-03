@@ -23,7 +23,7 @@
       position: relative;
 
       .cont_111 {
-        width: 25vw;
+        width: 50vw;
         max-width: 250px;
         height: 60%;
 
@@ -55,11 +55,17 @@
           border-right-style: hidden;
           border-left-style: hidden;
         }
+
+        @include breakpoint(md) {
+          width: 25vw;
+        }
       }
 
       @include breakpoint(md) {
         height: 56vw;
         max-height: 500px;
+
+        left: 100px;
       }
     }
 
@@ -72,6 +78,8 @@
 
       @include breakpoint(md) {
         display: inline;
+        position: absolute;
+        right: 0;
       }
     }
 
@@ -115,8 +123,8 @@
       background-color: #eba214;
 
       position: absolute;
-      left: 0;
-      top: 50%;
+      left: 6%;
+      bottom: 48%;
       transform: translate(0, -50%);
 
       &__2 {
