@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useRef} from 'react'
  
 import classes from '../scss/MainVideo.module.scss'
+import { TweenMax, Power3 } from 'gsap/gsap-core'
 
 const MainVideo = () => {
   return (

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
@@ -7,51 +8,100 @@ import StepContent from '@mui/material/StepContent';
 import Button from '@mui/material/Button';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
+import TextField from '@mui/material/TextField';
+import MenuItem from '@mui/material/MenuItem';
+
+
+const metodo_pago = [
+  {
+    value: 'efectivo',
+    label: 'Efectivo',
+  },
+  {
+    value: 'credito',
+    label: 'Credito',
+  },
+];
+
 
 const steps = [
   {
     label: 'Datos Personales',
     description:     
-      <form >
-      <label>
-        Nombre y Apellido:
-        <input type="text" name="nombre"/>
-      </label>
-      <label>
-        Numero de Identificación:
-        <input type="text" name="nombre"/>
-      </label>
-      <label>
-        Correo:
-        <input type="text" name="nombre"/>
-      </label>
-      <label>
-        Mensaje:
-        <textarea name="mensaje"></textarea>
-      </label>
-      </form>,    
+    <Box
+    component="form"
+    sx={{
+      '& > :not(style)': { m: 1, width: '25ch' },
+    }}
+    noValidate
+    autoComplete="off"
+    >
+      <TextField name='nombre' label="Nombre" variant="outlined" />
+      <TextField name='apellido' label="Apellido" variant="outlined" />
+      <TextField name='identificacion' label="# de Identificación" variant="outlined"/>
+      <TextField name='nacionalidad' label="Nacionalidad" variant="outlined" />
+      <TextField name='mail' label="Mail" variant="outlined" />
+      <TextField name='mensaje' label="Mensaje" variant="outlined" />
+    </Box>    
   },
-
+  
   {
     label: 'Metodo de Pago',
-    description:       <form >
-    <label>
-      Efectivo:
-      <input type="text" name="nombre"/>
-    </label>
-    <label>
-      Tarjeta de Credito:
-      <input type="text" name="nombre"/>
-    </label>
+    description:       
+    <Box
+    component="form"
+    sx={{
+      '& .MuiTextField-root': { m: 1, width: '25ch' },
+    }}
+    noValidate
+    autoComplete="off"
+    >
+    <div>
+      <TextField
+        id="metodo_pago"
+        select
+        label="Select"
+        defaultValue="EUR"
+        helperText="Please select your currency"
+        >
+        {metodo_pago.map((option) => (
+          <MenuItem key={option.value} value={option.value}>
+            {option.label}
+          </MenuItem>
+        ))}
+      </TextField>
 
-    </form>,
+    </div>
+
+  </Box>
   },
 
   {
     label: 'Detalles de tu reserva',
-    description: `Esta es tu reserva`,
+    description: 
+    <Box>
+      <div>nombre{}</div>
+      <div>apellido{}</div>
+      <div>identificacion{}</div>
+      <div>nacionalidad{}</div>
+      <div>mail{}</div>
+      <div>mensaje{}</div>
+      <div>metodo de pago{}</div>
+    </Box>
   },
 ];
+
+function Formulario() {
+  const [formData, setFormData] = useState({
+    nombre: '',
+    apellido: '',
+    identificacion: '',
+    nacionalidad: '',
+    mail: '',
+    mansaje: '',
+    metodo_pago: '',
+  });
+}
 
 export default function VerticalLinearStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
