@@ -8,13 +8,16 @@ const MainVideo = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
-    gsap.to(textRef.current, {
-      opacity: 0,
-      y: -50,
-      duration: 1,
-      ease: "power2.out"
-    });
-  }, []);
+    gsap.fromTo(textRef.current,   {
+      x: "-50%", // Inicia desde la izquierda
+      opacity: 0 // Comienza con opacidad cero
+    },
+    {
+      x: "0%", // Llega al centro
+      opacity: 1, // Opacidad completa
+      duration: 3 // Duración de la animación en segundos
+    }
+      );}, []);
   
   return (
     <article className={classes.article_main_video}>
