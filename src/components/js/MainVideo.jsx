@@ -8,7 +8,7 @@ const MainVideo = () => {
       
       <h1 className={classes.titulo}>VIVE LA EXPERIENCIA</h1>
 
-      <video src={require(`../../img/general/video.MOV`)}  autoPlay loop muted />
+      <video src={require(`../../img/general/video2.MOV`)}  autoPlay loop muted />
     </article>
   )
 }

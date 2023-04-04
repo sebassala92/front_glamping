@@ -11,15 +11,45 @@ import Typography from '@mui/material/Typography';
 const steps = [
   {
     label: 'Datos Personales',
-    description: `hola`,
+    description:     
+      <form >
+      <label>
+        Nombre y Apellido:
+        <input type="text" name="nombre"/>
+      </label>
+      <label>
+        Numero de Identificación:
+        <input type="text" name="nombre"/>
+      </label>
+      <label>
+        Correo:
+        <input type="text" name="nombre"/>
+      </label>
+      <label>
+        Mensaje:
+        <textarea name="mensaje"></textarea>
+      </label>
+      </form>,    
   },
+
   {
-    label: 'Fecha',
-    description: `adios`,
+    label: 'Metodo de Pago',
+    description:       <form >
+    <label>
+      Efectivo:
+      <input type="text" name="nombre"/>
+    </label>
+    <label>
+      Tarjeta de Credito:
+      <input type="text" name="nombre"/>
+    </label>
+
+    </form>,
   },
+
   {
-    label: 'Metodo De Pago',
-    description: `hola`,
+    label: 'Detalles de tu reserva',
+    description: `Esta es tu reserva`,
   },
 ];
 
@@ -40,9 +70,13 @@ export default function VerticalLinearStepper() {
 
   return (
     <Box sx={{ maxWidth: 400 }}>
+
       <Stepper activeStep={activeStep} orientation="vertical">
+
         {steps.map((step, index) => (
+
           <Step key={step.label}>
+
             <StepLabel
               optional={
                 index === 2 ? (
@@ -52,8 +86,11 @@ export default function VerticalLinearStepper() {
             >
               {step.label}
             </StepLabel>
+
             <StepContent>
+
               <Typography>{step.description}</Typography>
+              
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
@@ -73,9 +110,13 @@ export default function VerticalLinearStepper() {
                 </div>
               </Box>
             </StepContent>
+
           </Step>
+
         ))}
+
       </Stepper>
+
       {activeStep === steps.length && (
         <Paper square elevation={0} sx={{ p: 3 }}>
           <Typography>All steps completed - you&apos;re finished</Typography>
@@ -84,6 +125,7 @@ export default function VerticalLinearStepper() {
           </Button>
         </Paper>
       )}
+
     </Box>
   );
 }
