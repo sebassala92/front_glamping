@@ -19,8 +19,8 @@
     max-height: 420px;
     margin: auto;
 
-    .carousel-root {
-      display: none;
+    .carousel .thumbs {
+      padding: 0;
     }
 
     @include breakpoint(md) {

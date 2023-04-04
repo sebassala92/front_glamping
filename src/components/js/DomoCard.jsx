@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 import classes from '../scss/DomoCard.module.scss'
+import '../scss/StylesExternalComp.css';
 
 
 const DomoCard = (props) => {
