@@ -7,6 +7,7 @@ function Calendar() {
     availability,
     setAvailability
   })
+
   return (
     <div>
       <Calendar />
